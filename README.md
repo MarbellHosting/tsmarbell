@@ -2,6 +2,8 @@
 
 A comprehensive Python library for interacting with TSBarbell AI trading indicators, visualizing data, and performing rigorous statistical analysis.
 
+**Get your API key and subscribe to indicator packages at [ts.marbell.com](https://ts.marbell.com/).**
+
 ## Installation
 
 1. Clone the repository.
@@ -17,8 +19,8 @@ pip install -r requirements.txt
 
 ```python
 from tsbarbell import (
-    TSBarbellClient, 
-    plot_slope_probability, 
+    TSBarbellClient,
+    plot_slope_probability,
     plot_break_up_probability
 )
 
@@ -76,11 +78,11 @@ fig.show()
 - **Data Management**: Easy fetching and combining of multiple indicators into a single Pandas DataFrame.
 - **Visualization**: Interactive Plotly charts for all indicators.
 - **Statistical Validation**: Built-in suite of tests to prove strategy significance:
-    - Monte Carlo Simulation
-    - Bootstrap Analysis
-    - Walk-Forward Validation
-    - Permutation Tests
-    - T-Tests
+  - Monte Carlo Simulation
+  - Bootstrap Analysis
+  - Walk-Forward Validation
+  - Permutation Tests
+  - T-Tests
 - **Backtesting**: Integration with `vectorbt` for fast portfolio simulation.
 
 ## Structure
