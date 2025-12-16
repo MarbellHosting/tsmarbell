@@ -13,6 +13,10 @@ A comprehensive Python library for interacting with TSBarbell AI trading indicat
 pip install -r requirements.txt
 ```
 
+## Documentation
+
+Detailed documentation for all available indicators can be found in the [DOC/indicators.md](DOC/indicators.md) file.
+
 ## Usage
 
 ### 1. Fetching & Visualizing Indicators

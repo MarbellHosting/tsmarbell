@@ -4,6 +4,7 @@ from typing import List, Dict, Any, Tuple
 from .indicators.btc_slope import BTCSlopeIndicator
 from .indicators.btc_break_up import BTCBreakUpIndicator
 from .indicators.btc_break_down import BTCBreakDownIndicator
+from .indicators.btc_volatility import BTCVolatility
 
 
 class TSBarbellClient:
@@ -18,6 +19,7 @@ class TSBarbellClient:
         self.btc_slope = BTCSlopeIndicator(self)
         self.btc_break_up = BTCBreakUpIndicator(self)
         self.btc_break_down = BTCBreakDownIndicator(self)
+        self.btc_volatility = BTCVolatility(self)
 
     def _fetch(self, endpoint: str, limit: int = 10000) -> List[Dict[str, Any]]:
         url = f"{self.BASE_URL}/{endpoint}"
